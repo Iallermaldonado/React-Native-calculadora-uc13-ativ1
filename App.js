@@ -58,6 +58,13 @@ export default function App() {
       case '+/-':
         setCurrentNumber(currentNumber * -1)
         return
+        case '%':
+        setCurrentNumber(currentNumber + " / 100")
+        setCurrentNumber(currentNumber / 100)
+        calculator()
+        return
+        
+        
     }
 
     setCurrentNumber(currentNumber + buttonPressed)
